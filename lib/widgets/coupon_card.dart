@@ -112,10 +112,7 @@ class CouponCard extends StatelessWidget {
                   ),
                   Text(
                     description,
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey.shade700,
-                    ),
+                    style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -138,4 +135,3 @@ class CouponCard extends StatelessWidget {
     );
   }
 }
-

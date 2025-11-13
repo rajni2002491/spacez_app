@@ -183,6 +183,7 @@ class CouponsScreen extends StatelessWidget {
                           ],
                         ),
                       ),
+                      SizedBox(height: 10),
                     ],
                   ),
                 ),
