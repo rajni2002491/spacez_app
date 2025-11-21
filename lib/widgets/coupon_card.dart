@@ -20,10 +20,9 @@ class CouponCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
+      child: SizedBox(
         width: 345,
         height: 184,
-        margin: const EdgeInsets.symmetric(vertical: 8),
         child: DecoratedBox(
           decoration: const BoxDecoration(
             color: Color(0xFFFFFBF8),
@@ -160,7 +159,7 @@ class _ApplyButton extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const [
-            Icon(Icons.local_offer, size: 16, color: CouponCard._brandColor),
+            Icon(Icons.local_offer_outlined, size: 16, color: CouponCard._brandColor),
             SizedBox(width: 6),
             Text(
               'Apply',

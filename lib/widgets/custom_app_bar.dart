@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         top: false,
         bottom: false,
         child: SizedBox(
-          height: preferredSize.height,
+          height: 70,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(

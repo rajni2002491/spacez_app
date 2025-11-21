@@ -39,6 +39,7 @@ class CouponsScreen extends StatelessWidget {
                           description:
                               '15% off when you book for 5 days or more and 20% off when you book for 30 days or more.',
                         ),
+                        SizedBox(height: 56),
                         // Payment offers section
                         const Padding(
                           padding: EdgeInsets.fromLTRB(16, 16, 16, 8),
