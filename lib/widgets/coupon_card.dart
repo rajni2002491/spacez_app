@@ -70,15 +70,12 @@ class CouponCard extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          'Read more',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.grey.shade600,
-                          ),
+                      Text(
+                        'Read more',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey.shade600,
                         ),
                       ),
                     ],
@@ -104,6 +101,7 @@ class _CouponStub extends StatelessWidget {
       width: 72,
       decoration: const BoxDecoration(
         color: CouponCard._brandColor,
+        borderRadius: BorderRadius.horizontal(left: Radius.circular(16)),
       ),
       child: Center(
         child: RotatedBox(
@@ -131,13 +129,13 @@ class _ApplyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      //borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(20),
       child: Ink(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
         decoration: BoxDecoration(
           color: Colors.white,
-          //border: Border.all(color: CouponCard._brandColor),
-         // borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: CouponCard._brandColor),
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
