@@ -19,11 +19,11 @@ class CouponCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      child: SizedBox(
-        width: double.infinity,
+    return Center(
+      child: Container(
+        width: 345,
         height: 184,
+        margin: const EdgeInsets.symmetric(vertical: 8),
         child: DecoratedBox(
           decoration: const BoxDecoration(
             color: Color(0xFFFFFBF8),
@@ -40,7 +40,7 @@ class CouponCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _CouponStub(discount: discount),
-              const SizedBox(width: 16),
+              const SizedBox(width: 8),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(4, 20, 20, 16),
@@ -69,6 +69,8 @@ class CouponCard extends StatelessWidget {
                           height: 1.4,
                           color: Color(0xFF5C4B3D),
                         ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
                       ),
                       const Spacer(),
                       Text(
@@ -99,7 +101,7 @@ class _CouponStub extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 72,
+      width: 60,
       child: Stack(
         children: [
           Positioned.fill(child: Container(color: CouponCard._brandColor)),
