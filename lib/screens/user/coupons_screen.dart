@@ -71,20 +71,21 @@ class CouponsScreen extends StatelessWidget {
                       // Green banner
                       Container(
                         width: double.infinity,
-                        color: Colors.green,
+                        color: const Color(0xFF316836),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 12,
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
-                            Icon(
-                              Icons.percent,
+                            Image.asset(
+                              'assets/offer_filled.png',
+                              width: 20,
+                              height: 20,
                               color: Colors.white,
-                              size: 20,
                             ),
-                            SizedBox(width: 8),
-                            Text(
+                            const SizedBox(width: 8),
+                            const Text(
                               'Book now & Unlock exclusive rewards!',
                               style: TextStyle(
                                 color: Colors.white,
@@ -162,7 +163,7 @@ class CouponsScreen extends StatelessWidget {
                                 // Handle reserve button tap
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF8B4513),
+                                backgroundColor: const Color(0xFFC16B3E),
                                 padding: const EdgeInsets.symmetric(
                                   horizontal: 32,
                                   vertical: 12,
@@ -195,4 +196,3 @@ class CouponsScreen extends StatelessWidget {
     );
   }
 }
-
