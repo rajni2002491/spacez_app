@@ -28,7 +28,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(8),
                     child: Icon(
-                      Icons.arrow_back_ios_new,
+                      Icons.arrow_back,
                       size: 18,
                       // color: Color(0xFFC16B3E),
                     ),
