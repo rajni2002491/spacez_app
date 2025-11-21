@@ -77,6 +77,7 @@ class CouponsScreen extends StatelessWidget {
                           vertical: 12,
                         ),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
                               'assets/offer_filled.png',
@@ -169,7 +170,6 @@ class CouponsScreen extends StatelessWidget {
                                   vertical: 12,
                                 ),
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
                               child: const Text(

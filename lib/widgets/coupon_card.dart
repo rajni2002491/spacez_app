@@ -24,11 +24,10 @@ class CouponCard extends StatelessWidget {
         width: 345,
         height: 184,
         child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: const Color(0xFFFFFBF8),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: const Color(0xFFE5DDD2)),
-            boxShadow: const [
+          decoration: const BoxDecoration(
+            color: Color(0xFFFFFBF8),
+            borderRadius: BorderRadius.zero,
+            boxShadow: [
               BoxShadow(
                 offset: Offset(0, 4),
                 blurRadius: 12,
@@ -101,7 +100,7 @@ class _CouponStub extends StatelessWidget {
       width: 72,
       decoration: const BoxDecoration(
         color: CouponCard._brandColor,
-        borderRadius: BorderRadius.horizontal(left: Radius.circular(16)),
+        borderRadius: BorderRadius.zero,
       ),
       child: Center(
         child: RotatedBox(
