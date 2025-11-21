@@ -26,6 +26,7 @@ class CouponsScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        SizedBox(height: 10),
                         // Coupons section
                         const CouponCard(
                           discount: '₹6,900',
@@ -33,6 +34,7 @@ class CouponsScreen extends StatelessWidget {
                           description:
                               '15% off when you book for 5 days or more and 20% off when you book for 30 days or more.',
                         ),
+                        SizedBox(height: 20),
                         const CouponCard(
                           discount: '₹6,900',
                           title: 'LONGSTAY',

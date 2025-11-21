@@ -159,7 +159,11 @@ class _ApplyButton extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const [
-            Icon(Icons.local_offer_outlined, size: 16, color: CouponCard._brandColor),
+            Icon(
+              Icons.local_offer_outlined,
+              size: 16,
+              color: CouponCard._brandColor,
+            ),
             SizedBox(width: 6),
             Text(
               'Apply',
