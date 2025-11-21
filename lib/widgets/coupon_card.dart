@@ -1,3 +1,4 @@
+import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 
 class CouponCard extends StatelessWidget {
@@ -39,9 +40,10 @@ class CouponCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _CouponStub(discount: discount),
+              const SizedBox(width: 16),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
+                  padding: const EdgeInsets.fromLTRB(4, 20, 20, 16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -96,24 +98,41 @@ class _CouponStub extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 72,
-      decoration: const BoxDecoration(
-        color: CouponCard._brandColor,
-        borderRadius: BorderRadius.zero,
-      ),
-      child: Center(
-        child: RotatedBox(
-          quarterTurns: 3,
-          child: Text(
-            discount,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
+      child: Stack(
+        children: [
+          Positioned.fill(child: Container(color: CouponCard._brandColor)),
+          Center(
+            child: RotatedBox(
+              quarterTurns: 3,
+              child: Text(
+                discount,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
           ),
-        ),
+          Positioned.fill(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: DottedLine(
+                  direction: Axis.vertical,
+                  lineLength: double.infinity,
+                  lineThickness: 2,
+                  dashLength: 6,
+                  dashGapLength: 13,
+                  dashColor: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
