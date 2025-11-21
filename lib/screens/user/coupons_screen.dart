@@ -169,8 +169,7 @@ class CouponsScreen extends StatelessWidget {
                                   horizontal: 32,
                                   vertical: 12,
                                 ),
-                                shape: RoundedRectangleBorder(
-                                ),
+                                shape: RoundedRectangleBorder(),
                               ),
                               child: const Text(
                                 'Reserve',
